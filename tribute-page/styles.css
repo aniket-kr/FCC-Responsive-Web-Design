@@ -1,0 +1,78 @@
+:root {
+  --fw-normal: 300;
+  --fw-bold: 600;
+
+  --theme-bg-color: #F4F1BB;
+  --theme-accent-color: #ED6A5A;
+  --theme-secondary-color: #9BC1BC;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: var(--fw-normal, 300);
+  font-size: 1.25rem;
+  background-color: var(--theme-bg-color);
+}
+#main {
+  margin: 1.5rem;
+}
+
+#title {
+  text-align: center;
+  font-weight: var(--fw-bold, 600);
+  font-size: 300%;
+  color: var(--theme-accent-color);
+  text-shadow: 3px 3px 5px var(--theme-secondary-color);
+}
+
+#img-div {
+  display: grid;
+  align-items: center;
+  background-color: var(--theme-secondary-color);
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-caption {
+  text-align: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 85%;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#tribute-info {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tribute-info h2 {
+  font-weight: var(--fw-bold);
+  color: var(--theme-accent-color);
+}
+
+#tribute-info p {
+  text-align: justify;
+  line-height: 120%;
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 1rem;
+  }
+
+  #title {
+    font-size: 200%;
+  }
+}
