@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generic Survey Form</title>
+
+  <!-- Google Fonts: "Abel" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body class="layout-wrapper">
+  <main>
+    <h1 id="title">Improve Our Product</h1>
+    <p id="description">
+      Help us improve our product and get a change to be featured for your
+      contribution!
+    </p>
+
+    <form action="#" method="post" id="survey-form">
+      <label class="full-width" id="name-label" for="name">Name </label>
+      <input class="fields" type="text" id="name" required placeholder="Full name" />
+
+      <label class="full-width" id="email-label" for="email">Email </label>
+      <input class="fields" type="email" id="email" required placeholder="Email" />
+
+      <label class="full-width" id="number-label" for="number">
+        Age (Optional)
+      </label>
+      <input class="fields" type="number" name="age" id="number" max="150" min="5" placeholder="Age" />
+
+      <label class="full-width" for="dropdown" id="dropdown-label">
+        How much do you earn monthly (in INR)?
+      </label>
+      <select class="fields" name="income" id="dropdown">
+        <option selected value="0">Prefer not to say</option>
+        <option value="5000">5k or less</option>
+        <option value="10000">upto 10k</option>
+        <option value="20000">upto 20k</option>
+        <option value="30000">upto 30k</option>
+        <option value="50000">upto 50k</option>
+        <option value="100000">1 lakh or more</option>
+      </select>
+
+      <fieldset>
+        <label class="full-width">
+          How likely are you to recommend this product to a friend?
+        </label>
+        <div class="options">
+          <div class="input-container">
+
+            <input type="radio" value="0" name="satisfaction" id="radio1" />
+            <label for="radio1">Not Likely</label>
+          </div>
+
+          <div class="input-container">
+
+            <input type="radio" value="1" name="satisfaction" id="radio2" />
+            <label for="radio2">Somewhat Likely</label>
+          </div>
+
+          <div class="input-container">
+            <input type="radio" value="2" name="satisfaction" id="radio3" />
+            <label for="radio3">Very Likely</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <label class="full-width">What features do you most like?</label>
+        <div class="options">
+          <div class="input-container">
+
+            <input type="checkbox" value="compact-size" id="checkbox1" />
+            <label for="checkbox1">Compact Size</label>
+          </div>
+
+          <div class="input-container">
+
+            <input type="checkbox" value="lightweight" id="checkbox2" />
+            <label for="checkbox2">Lightweight</label>
+          </div>
+
+          <div class="input-container">
+
+            <input type="checkbox" value="color-options" id="checkbox3" />
+            <label for="checkbox3">Number of Color Options</label>
+          </div>
+
+          <div class="input-container">
+            <input type="checkbox" value="value-for-money" id="checkbox4" />
+            <label for="checkbox4">Value For Money</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <label class="full-width" for="textarea">Any other comments?</label>
+      <textarea class="fields" name="comments" id="textarea" rows="5"
+        placeholder="Write what you like/dislike about the product, or what you would like to see added/removed."></textarea>
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </main>
+
+  <footer>
+    <div>
+      Free SVG Background by
+      <a target="_blank" href="https://svgbackgrounds.com">
+        svgbackgrounds.com
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
