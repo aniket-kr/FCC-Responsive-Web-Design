@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoon Music</title>
+
+  <!-- Google Fonts: Lato(w300, w700) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <picture class="logo-container">
+      <img id="header-img" src="assets/logo.png" alt="Spoon Company Logo">
+      <span id="brand-name">Spoon Music</span>
+    </picture>
+
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#video-demo" class="nav-link">See It Happen</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <h1>Best in Class Music Experience</h1>
+      <p>Get started today!</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <input required type="email" id="email" name="email" placeholder="Enter your email" aria-label="Enter email">
+        <input id="submit" type="submit" value="Let's Go!">
+      </form>
+    </section>
+
+    <section id="features">
+      <div class="feature-item-container">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+        <div>
+          <h2>Guaranteed Quality</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quidem vero sed dolore voluptate
+            dignissimos, nesciunt voluptas sunt officiis aut enim saepe corrupti a praesentium deleniti alias eveniet?
+            Quisquam, necessitatibus!</p>
+        </div>
+      </div>
+
+      <div class="feature-item-container">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <div>
+          <h2>Timeless History</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum at, iste atque sint repellendus rem sequi
+            aut
+            laborum sit ullam et accusantium vel autem voluptates maxime ea quia odio nam.</p>
+        </div>
+      </div>
+
+      <div class="feature-item-container">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+        </svg>
+        <div>
+          <h2>Wireless Enabled</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia in sed nobis quis dolores quod veniam cum
+            quasi
+            distinctio! Fuga suscipit, ipsa et mollitia dicta assumenda porro dolore quisquam voluptatum.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="video-demo">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+      <div class="plan-container">
+        <h2 class="plan-name">Basic</h2>
+        <h3 class="plan-price">₹1,500</h3>
+        <ul class="plan-benefits-list">
+          <li class="plan-benefits-item">lorem</li>
+          <li class="plan-benefits-item">lorem ipsum</li>
+          <li class="plan-benefits-item">dolor set amet</li>
+        </ul>
+        <button class="plan-select-button">Buy Now</button>
+      </div>
+
+      <div class="plan-container">
+        <h2 class="plan-name">Premium</h2>
+        <h3 class="plan-price">₹2,500</h3>
+        <ul class="plan-benefits-list">
+          <li class="plan-benefits-item">lorem</li>
+          <li class="plan-benefits-item">lorem ipsum</li>
+          <li class="plan-benefits-item">dolor set amet</li>
+        </ul>
+        <button class="plan-select-button">Buy Now</button>
+      </div>
+
+      <div class="plan-container">
+        <h2 class="plan-name">Ultimate</h2>
+        <h3 class="plan-price">₹4,000</h3>
+        <ul class="plan-benefits-list">
+          <li class="plan-benefits-item">lorem</li>
+          <li class="plan-benefits-item">lorem ipsum</li>
+          <li class="plan-benefits-item">dolor set amet</li>
+        </ul>
+        <button class="plan-select-button">Buy Now</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
