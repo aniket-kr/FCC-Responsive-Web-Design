@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+:root {
+  --fw-normal: 400;
+  --fw-bold: 600;
+  --layout-sidebar-width: 16rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: var(--fw-normal);
+}
+
+.sidebar {
+  width: var(--layout-sidebar-width);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  border-right: 5px solid #3e3e3e;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar > header > h1 {
+  text-align: center;
+  padding: 2rem 0.25rem;
+  font-size: 2rem;
+  background-image: linear-gradient(25deg, #c5dee4, #00d0ff);
+}
+
+.nav-list {
+  list-style-type: none;
+  font-weight: var(--fw-bold);
+}
+
+.nav-item {
+  border-bottom: 2px solid #3e3e3e;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.nav-link {
+  display: block;
+  margin: 1rem 1rem 0.5rem auto;
+  padding-top: 1rem;
+
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+}
+
+#main-doc {
+  margin-left: var(--layout-sidebar-width);
+  padding: 2rem;
+}
+
+.main-section header {
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+  color: #1f1f1f;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(61, 162, 251);
+}
+
+.content-container {
+  line-height: 160%;
+  font-size: 1.1rem;
+}
+
+.content-container p {
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+.code-block {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.code-block, .code-block > pre {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.1rem;
+  display: block;
+  background-color: #e9e9e9;
+}
+
+.content-container h3 {
+  /* border: 2px solid red; */
+  color: #525252;
+  font-weight: var(--fw-bold);
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    position: unset;
+    width: 100%;
+    height: fit-content;
+    border: unset;
+  }
+
+  .nav-list {
+    padding: 0 2rem;
+    border-bottom: 2px solid gray;
+  }
+
+  .nav-item {
+    border: unset;
+  }
+
+  .nav-item::marker {
+    font-size: 50px;
+  }
+
+  .nav-link {
+    padding: 0.25rem;
+  }
+
+  .nav-link:hover {
+    color:rgb(61, 162, 251);
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
