@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple React Docs</title>
+
+  <!-- Google Fonts: Inconsolata[400], Raleway[300, 600] -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Raleway:wght@300;400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="sidebar" id="navbar">
+      <header>
+        <h1>React Docs</h1>
+      </header>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#basics_of_react" class="nav-link">Basics of React</a>
+        </li>
+        <li class="nav-item">
+          <a href="#getting_started" class="nav-link">Getting Started</a>
+        </li>
+        <li class="nav-item">
+          <a href="#component_based_design" class="nav-link">Component Based Design</a>
+        </li>
+        <li class="nav-item">
+          <a href="#functional_&_class_components" class="nav-link">Functional & Class Components</a>
+        </li>
+        <li class="nav-item">
+          <a href="#react_hooks" class="nav-link">React Hooks</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+
+      <!-- Basics of React -->
+      <section class="main-section" id="basics_of_react">
+        <header>Basics of React</header>
+        <div class="content-container">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ab laborum provident id beatae dignissimos,
+            impedit incidunt ullam vel nulla fugit ad aut, velit voluptate consequatur error rem deleniti praesentium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non architecto quas, consequatur minima ullam
+            praesentium, esse magnam obcaecati dolore quidem eum earum ipsa doloribus quaerat exercitationem sed facere
+            accusantium accusamus?
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus explicabo mollitia, voluptates temporibus
+            odio ipsa, ab amet inventore sit recusandae fuga. Rem excepturi natus consectetur eveniet, animi id sequi
+            nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem veniam cum quos suscipit, fugit
+            nobis temporibus eveniet iusto quisquam exercitationem maiores corporis excepturi quis consequatur. Optio
+            commodi officia odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, odit iure ea
+            voluptas quaerat autem. Minima rem perspiciatis eveniet officiis laboriosam fugit harum. Obcaecati magni
+            sapiente, unde soluta nisi eaque.
+          </p>
+        </div>
+      </section>
+
+      <!-- Getting Started -->
+      <section class="main-section" id="getting_started">
+        <header>Getting Started</header>
+        <div class="content-container">
+          <p>
+            <strong class="code-inline">React 18</strong> is the the latest version. Things have changed a bit in this
+            release and here's
+            how to get started:
+          </p>
+          <code class="code-block">npx create-react-app first_app</code>
+
+          <p>
+            At this point, you should have a new React 18 project. You can see the result in the default browser
+            if you start the server and head to the localhost.
+          </p>
+          <code class="code-block">npm run start</code>
+        </div>
+      </section>
+
+      <!-- Component Based Design -->
+      <section class="main-section" id="component_based_design">
+        <header>Component Based Design</header>
+        <div class="content-container">
+          <p>
+            React is all about writing small, reusable components. Each component can be defined as small part of a
+            larger UI element. For example, buttons are used in forms, action buttons, cards and other places. Button,
+            styled and ready, is a good candidate for making into a React component.
+          </p>
+          <p>
+            Some other UI components that can be good React component candidates are:
+          <ul>
+            <li>Navbar</li>
+            <li>Footer</li>
+            <li>ListContainer - fully ready major UI component</li>
+            <li>ListItem - individual reapeating entry in ListContainer</li>
+            <li>Content Card</li>
+          </ul>
+          </p>
+        </div>
+      </section>
+
+      <!-- Functional & Class Components -->
+      <section class="main-section" id="functional_&_class_components">
+        <header>Functional & Class Components</header>
+        <div class="content-container">
+          <h3>Class Components</h3>
+          <p>We can use JavaScript ES6 syntax to model components using class syntax in JS. Here's a sample:</p>
+          <code>
+            <pre class="code-block">
+import { Component } from 'react';
+
+class App extends Component {
+
+  render() {
+    return &lt;div&gt;Hello World!&lt;/div&gt;;
+  }
+}
+
+export default App;
+            </pre>
+          </code>
+
+          <h3>Functional Components</h3>
+          <p>
+            Here's how you'd do the same thing using a functional component, which is the defacto standard today after
+            hooks have made state management a breeze.
+          </p>
+          <code class="code-block">
+            <pre>
+const App = () => {
+  return <div>Hello World!</div>;
+}
+
+export default App;
+            </pre>
+          </code>
+          <p>As you can see, the functional variant is much more consise and easy to maintain.</p>
+        </div>
+      </section>
+
+      <!-- React Hooks -->
+      <section class="main-section" id="react_hooks">
+        <header>React Hooks</header>
+        <div class="content-container">
+          <p>
+            React has a number of hooks built in and provides the user with the ability to write their owm custom hooks.
+            All React hooks begin with `use` prefix. The two most important hooks in React are described below:
+          </p>
+          <h3>useState Hook</h3>
+          <p>
+            This hook replaces the need for class attributes in components by storing state.
+          </p>
+          <code class="code-block">const [value, setValue] = useState(initialValue);</code>
+
+          <h3>useEffect Hook</h3>
+          <p>The useEffect hook is used to execute enclosing code only when the specified dependencies change.</p>
+          <code class="code-block">useEffect(() => { /* do something here */ }, [dependencies]);</code>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
